@@ -26,7 +26,6 @@ return require('packer').startup(function(use)
         require("todo-comments").setup {
           -- your configuration comes here
           -- or leave it empty to use the default settings
-          -- refer to the configuration section below
         }
       end
     }
@@ -57,4 +56,10 @@ return require('packer').startup(function(use)
       'nvim-lualine/lualine.nvim',
       requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
+    use 'hrsh7th/nvim-cmp'
+    use 'saadparwaiz1/cmp_luasnip'
+    use 'L3MON4D3/LuaSnip'
+    use "rafamadriz/friendly-snippets"
+
+
 end)
