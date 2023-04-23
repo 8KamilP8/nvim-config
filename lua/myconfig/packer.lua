@@ -51,6 +51,7 @@ return require('packer').startup(function(use)
     }
     use 'nvim-tree/nvim-web-devicons'
     use 'ThePrimeagen/harpoon'
+    use 'lewis6991/gitsigns.nvim'
 
     use {
       'nvim-lualine/lualine.nvim',
@@ -60,6 +61,7 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'L3MON4D3/LuaSnip'
     use "rafamadriz/friendly-snippets"
-
+    -- git integration
+    use("tpope/vim-fugitive")
 
 end)
